@@ -33,8 +33,12 @@
     "@dcloudio/uni-mp-toutiao": "^2.0.0-23720191024001",
     "@dcloudio/uni-mp-weixin": "^2.0.0-23720191024001",
     "@dcloudio/uni-stat": "^2.0.0-23720191024001",
+    "cheerio": "^1.0.0-rc.3",
     "flyio": "^0.6.2",
+    "node-sass": "^4.13.0",
+    "querystring": "^0.2.0",
     "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^8.0.0",
     "vue": "^2.6.10",
     "vuex": "^3.0.1"
   },
