@@ -6,6 +6,12 @@
 
 <script>
 export default {
+	props: {
+		navigationBarTextStyle: {
+			type: String,
+			defalut: '连续剧'
+		}
+	},
 	data() {
 		return {
 			active: false

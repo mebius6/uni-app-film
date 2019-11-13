@@ -6,6 +6,12 @@
 
 <script>
 export default {
+	props: {
+		navigationBarTextStyle: {
+			type: String,
+			defalut: '综艺'
+		}
+	},
 	data() {
 		return {
 			title: 'Hello'

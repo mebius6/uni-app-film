@@ -9,7 +9,7 @@ export default {
 	props: {
 		navigationBarTextStyle: {
 			type: String,
-			default: ''
+			default: '动漫'
 		}
 	},
 	data() {

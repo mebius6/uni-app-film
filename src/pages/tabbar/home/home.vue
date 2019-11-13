@@ -1,31 +1,50 @@
 <template>
-	<view class="content">
-		页面 - 1
+	<view>
+		<navbar-tabs :tabsList="tabsList" :page="page" :activeIndex="activeIndex" @tabsClickItem="tabsClickItem"></navbar-tabs>
 	</view>
 </template>
 
 <script>
 export default {
+	props: {
+		navigationBarTextStyle: {
+			type: String,
+			defalut: '首页'
+		}
+	},
 	data() {
 		return {
-			data: {}
+			activeIndex: 0,
+			page: 3,
+			tabsList: [
+				{
+					title: '待审批'
+				},
+				{
+					title: '已批准'
+				},
+				{
+					title: '已失效'
+				}
+			],
+			data: {},
+			params: {}
 		}
 	},
-	onLoad() {
-		try {
-			this.data = uni.getStorage('home').data.find(v => v.content === '首页')
-		} catch (error) {
-			console.log(error)
-		}
-	},
+	onLoad() {},
 	onShow() {},
-	onHide: function() {
+	onHide() {
 		this.data = {}
 	},
 	onTabItemTap(item) {
-		console.log(item)
+		console.log(item, this.$store)
 	},
-	methods: {}
+	methods: {
+		tabsClickItem(item) {
+			this.activeIndex = item.index
+		},
+		getList() {}
+	}
 }
 </script>
 

@@ -33,7 +33,7 @@
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "#333333",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "免费看视频",
     "navigationBarBackgroundColor": "#00bdab",
     "backgroundColor": "#F8F8F8"

@@ -1,27 +1,13 @@
 <script>
-import api from './api'
 export default {
 	onLaunch: function() {
 		console.log('App Launch')
 	},
 
 	onShow: function() {
-		// console.log('App Show')
-		api.getList().then(
-			res => {
-				uni.setStorage({
-					key: 'header',
-					data: res.header
-				})
-			},
-			err => {
-				console.log(['err', err])
-			}
-		)
+		this.$store.dispatch('getHeader')
 	},
-	onHide: function() {
-		uni.removeStorage({ key: 'header' })
-	}
+	onHide: function() {}
 }
 </script>
 

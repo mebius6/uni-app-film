@@ -6,6 +6,12 @@
 
 <script>
 export default {
+	props: {
+		navigationBarTextStyle: {
+			type: String,
+			defalut: '电影'
+		}
+	},
 	data() {
 		return {
 			active: false
