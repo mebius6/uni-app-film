@@ -1,13 +1,13 @@
 <script>
 export default {
-	onLaunch: function() {
+	onLaunch() {
 		console.log('App Launch')
 	},
 
-	onShow: function() {
-		this.$store.dispatch('getHeader')
+	async onShow() {
+		await this.$store.dispatch('getHeader')
 	},
-	onHide: function() {}
+	onHide() {}
 }
 </script>
 

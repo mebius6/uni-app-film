@@ -30,6 +30,9 @@
       "style": {
         "navigationBarTitleText": "动漫"
       }
+    },
+    {
+      "path": "pages/tabbar-detail/tabbarDetail"
     }
   ],
   "globalStyle": {
