@@ -13,7 +13,7 @@ const whitelist = [
 // 服务接口地址
 const services = {
   commonBase: {
-    url: 'http://api.film.chenzhen.work',
+    url: 'http://api.1156zy.chenzhen.work',
     port: 80
   }
 }
@@ -21,7 +21,7 @@ const services = {
 export default {
   bundleVersion: bundleVersion,
   version: version,
-  apiUrl: 'http://api.film.chenzhen.work',
+  apiUrl: 'http://api.1156zy.chenzhen.work',
   apiBaseUrl: '',
   apiConfig: services,
   netPrefix,

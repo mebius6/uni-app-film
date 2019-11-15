@@ -5,7 +5,11 @@ export default {
 	},
 
 	async onShow() {
-		await this.$store.dispatch('getHeader')
+		// await this.$store.dispatch('getHeader')
+		let res = await this.api.getBtList().catch(err => {
+			console.log(['bterr', err])
+		})
+		console.log(['btres', res])
 	},
 	onHide() {}
 }
