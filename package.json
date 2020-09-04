@@ -37,7 +37,7 @@
     "flyio": "^0.6.2",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "querystring": "^0.2.0",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^8.0.0",
